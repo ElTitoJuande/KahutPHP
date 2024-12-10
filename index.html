@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kahut</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <form action="registrar.php" method="POST">
-        <label for="nombreUsu">Nombre:</label>
-        <input type="text" id="nombreUsu" name="nombreUsu" required>
-        <input type="submit" value="Iniciar">
-    </form>
+    <div class="container">
+        <h2>Kahút!</h2>
+        <form action="registrar.php" method="POST">
+            <div class="usuario">
+                <input type="text" id="nombreUsu" name="nombreUsu" required>
+                <label for="nombreUsu">Nombre:</label>
+            </div>
+            <input type="submit" value="Iniciar">
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Iniciar
+            </a>
+        </form>
+    </div>
 </body>
 
 </html>

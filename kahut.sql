@@ -43,16 +43,16 @@ CREATE TABLE `preguntas` (
 --
 
 INSERT INTO `preguntas` (`cod`, `enunciado`, `respuesta`, `opcion_a`, `opcion_b`, `opcion_c`, `opcion_d`, `respuesta_correcta`) VALUES
-(11, '¿Cuál es la capital de Francia?', '', 'Berlín', 'Madrid', 'París', 'Roma', 'C'),
-(12, '¿Cuántos planetas hay en el sistema solar?', '', '7', '8', '9', '10', 'B'),
-(13, '¿En qué año se descubrió América?', '', '1492', '1500', '1600', '1700', 'A'),
-(14, '¿Cuál es el elemento químico con el símbolo \"O\"?', '', 'Oxígeno', 'Hidrógeno', 'Carbono', 'Nitrógeno', 'A'),
-(15, '¿Quién escribió \"Cien años de soledad\"?', '', 'Julio Cortázar', 'Gabriel García Márquez', 'Mario Vargas Llosa', 'Jorge Luis Borges', 'B'),
-(16, '¿Cuál es el océano más grande del mundo?', '', 'Atlántico', 'Índico', 'Pacífico', 'Ártico', 'C'),
-(17, '¿Qué es la fotosíntesis?', '', 'Proceso de respiración', 'Proceso de conversión', 'Proceso de crecimiento', 'Proceso de producción de energía en plantas', 'D'),
-(18, '¿Cuál es el continente más pequeño?', '', 'Asia', 'Oceanía', 'Europa', 'América', 'B'),
-(19, '¿Qué instrumento mide la temperatura?', '', 'Barómetro', 'Termómetro', 'Higrómetro', 'Anemómetro', 'B'),
-(20, '¿Cuál es la fórmula química del agua?', '', 'H?O', 'CO?', 'O?', 'H?SO?', 'A');
+(1, '¿Cuál es la capital de Francia?', '', 'Berlín', 'Madrid', 'París', 'Roma', 'C'),
+(2, '¿Cuántos planetas hay en el sistema solar?', '', '7', '8', '9', '10', 'B'),
+(3, '¿En qué año se descubrió América?', '', '1492', '1500', '1600', '1700', 'A'),
+(4, '¿Cuál es el elemento químico con el símbolo \"O\"?', '', 'Oxígeno', 'Hidrógeno', 'Carbono', 'Nitrógeno', 'A'),
+(5, '¿Quién escribió \"Cien años de soledad\"?', '', 'Julio Cortázar', 'Gabriel García Márquez', 'Mario Vargas Llosa', 'Jorge Luis Borges', 'B'),
+(6, '¿Cuál es el océano más grande del mundo?', '', 'Atlántico', 'Índico', 'Pacífico', 'Ártico', 'C'),
+(7, '¿Qué es la fotosíntesis?', '', 'Proceso de respiración', 'Proceso de conversión', 'Proceso de crecimiento', 'Proceso de producción de energía en plantas', 'D'),
+(8, '¿Cuál es el continente más pequeño?', '', 'Asia', 'Oceanía', 'Europa', 'América', 'B'),
+(9, '¿Qué instrumento mide la temperatura?', '', 'Barómetro', 'Termómetro', 'Higrómetro', 'Anemómetro', 'B'),
+(10, '¿Cuál es la fórmula química del agua?', '', 'H?O', 'CO?', 'O?', 'H?SO?', 'A');
 
 -- --------------------------------------------------------
 
@@ -72,13 +72,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombreUsu`, `tInicio`, `tFin`) VALUES
-(1, 'juande', '2024-12-05 11:50:40', '2024-12-05 12:01:02'),
-(2, 'ElTitoJuande', '2024-12-05 12:07:59', '2024-12-05 12:07:59'),
-(3, 'ElTitoJuande', '2024-12-05 12:10:50', '2024-12-05 12:11:42'),
-(4, 'pablo', '2024-12-05 12:12:23', '2024-12-05 12:12:58'),
-(5, 'hgjk', '2024-12-05 12:13:45', '2024-12-05 12:13:53'),
-(6, 'ElPollaLarga', '2024-12-05 12:19:21', '2024-12-05 12:20:32'),
-(7, 'ShuJuanki', '2024-12-05 12:21:46', '2024-12-05 12:21:53');
+(1, 'juande', '2024-12-05 11:50:40', '2024-12-05 12:01:02');
 
 --
 -- Índices para tablas volcadas
