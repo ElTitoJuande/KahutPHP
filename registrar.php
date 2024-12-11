@@ -5,19 +5,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombreUsu = trim($_POST['nombreUsu']);
 
     if (!empty($nombreUsu)) {
-        $sql = "INSERT INTO usuarios (nombreUsu, tInicio) VALUES (?, NOW(),?)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("s", $nombreUsu);
-        
-        if ($stmt->execute()) {
-            $id_usuario = $conn->insert_id;
-            $stmt->close();
-            header("Location: cuestionario.php?id=" . $id_usuario);
-            exit();
-        } else {
-            echo "Error: " . $stmt->error;
+        try {
+            $sql = "INSERT INTO usuarios (nombreUsu, tInicio) VALUES (:nombreUsu, NOW())";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':nombreUsu', $nombreUsu, PDO::PARAM_STR);
+            
+            if ($stmt->execute()) {
+                $id_usuario = $conn->lastInsertId(); // Obtener el último ID insertado
+                header("Location: cuestionario.php?id=" . $id_usuario);
+                exit();
+            } else {
+                echo "Error: No se pudo registrar el usuario.";
+            }
+        } catch (PDOException $e) {
+            echo "Error en la base de datos: " . $e->getMessage();
         }
-        $stmt->close();
     } else {
         echo "Error: El nombre de usuario no puede estar vacío.";
     }

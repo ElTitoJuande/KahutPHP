@@ -43,16 +43,17 @@ CREATE TABLE `preguntas` (
 --
 
 INSERT INTO `preguntas` (`cod`, `enunciado`, `respuesta`, `opcion_a`, `opcion_b`, `opcion_c`, `opcion_d`, `respuesta_correcta`) VALUES
-(1, '¿Cuál es la capital de Francia?', '', 'Berlín', 'Madrid', 'París', 'Roma', 'C'),
-(2, '¿Cuántos planetas hay en el sistema solar?', '', '7', '8', '9', '10', 'B'),
-(3, '¿En qué año se descubrió América?', '', '1492', '1500', '1600', '1700', 'A'),
-(4, '¿Cuál es el elemento químico con el símbolo \"O\"?', '', 'Oxígeno', 'Hidrógeno', 'Carbono', 'Nitrógeno', 'A'),
-(5, '¿Quién escribió \"Cien años de soledad\"?', '', 'Julio Cortázar', 'Gabriel García Márquez', 'Mario Vargas Llosa', 'Jorge Luis Borges', 'B'),
-(6, '¿Cuál es el océano más grande del mundo?', '', 'Atlántico', 'Índico', 'Pacífico', 'Ártico', 'C'),
-(7, '¿Qué es la fotosíntesis?', '', 'Proceso de respiración', 'Proceso de conversión', 'Proceso de crecimiento', 'Proceso de producción de energía en plantas', 'D'),
-(8, '¿Cuál es el continente más pequeño?', '', 'Asia', 'Oceanía', 'Europa', 'América', 'B'),
-(9, '¿Qué instrumento mide la temperatura?', '', 'Barómetro', 'Termómetro', 'Higrómetro', 'Anemómetro', 'B'),
-(10, '¿Cuál es la fórmula química del agua?', '', 'H?O', 'CO?', 'O?', 'H?SO?', 'A');
+(1, '¿Qué selección ganó la Copa Mundial de la FIFA 2018?', '', 'Alemania', 'Brasil', 'Francia', 'Argentina', 'C'),
+(2, '¿Quién es el máximo goleador en la historia de la Champions League?', '', 'Cristiano Ronaldo', 'Lionel Messi', 'Robert Lewandowski', 'Karim Benzema', 'A'),
+(3, '¿En qué año se jugó el primer Mundial de fútbol?', '', '1928', '1930', '1934', '1938', 'B'),
+(4, '¿Qué país ha ganado más Copas del Mundo?', '', 'Brasil', 'Italia', 'Alemania', 'Argentina', 'A'),
+(5, '¿Quién marcó el famoso gol conocido como "La Mano de Dios"?', '', 'Pelé', 'Diego Maradona', 'Zinedine Zidane', 'Johan Cruyff', 'B'),
+(6, '¿Cuál es el estadio más grande del mundo en capacidad?', '', 'Maracaná', 'Camp Nou', 'Estadio Azteca', 'Rungrado May Day', 'D'),
+(7, '¿Qué equipo tiene más títulos de la Premier League?', '', 'Manchester United', 'Liverpool', 'Chelsea', 'Arsenal', 'A'),
+(8, '¿Qué selección es conocida como "La Naranja Mecánica"?', '', 'España', 'Países Bajos', 'Bélgica', 'Francia', 'B'),
+(9, '¿Quién fue el primer ganador del Balón de Oro?', '', 'Alfredo Di Stéfano', 'Stanley Matthews', 'George Best', 'Lev Yashin', 'B'),
+(10, '¿Cuántos jugadores hay en un equipo de fútbol en el campo?', '', '9', '10', '11', '12', 'C');
+
 
 -- --------------------------------------------------------
 
